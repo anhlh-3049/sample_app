@@ -1,0 +1,26 @@
+vi:
+  helper:
+    application_helper:
+      base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  static_pages:
+    home:
+      title: "Ứng dụng mẫu"
+      provide_title: "Trang chủ"
+      service_html_first: "Đây là trang chủ của"
+      service_html_last: "ứng dụng mẫu"
+      rails_href: "Ruby on Rails hướng dẫn"
+      button_title: "Đăng ký ngay!"
+      welcome: "Chào mừng bạn đến với ứng dụng mẫu"
+    help:
+      title: "Trợ giúp"
+      provide_title: "Trợ giúp"
+      service_html_first: "Nhận sự trợ giúp về hướng dẫn Ruby on Rails tại"
+      service_html_last: "Để nhận trợ giúp về ứng dụng mẫu này hãy xem"
+      rails_help: "Trợ giúp về Rails"
+      rails_book: "Sách hướng dẫn Ruby on Rails"
+  layouts:
+    header:
+      title: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
