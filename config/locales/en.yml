@@ -24,3 +24,13 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+  users:
+    new:
+      provide_title: "sign_up"
+      title: "Sign up"
+      btn_title: "Create my account"
+      password_confirmation: "Confirmation"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "Error"

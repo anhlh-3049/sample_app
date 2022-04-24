@@ -24,3 +24,13 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+  users:
+    new:
+      provide_title: "Đăng_ký"
+      title: "Đăng ký"
+      btn_title: "Tạo tài khoản"
+      password_confirmation: "Xác nhận"
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu chứa"
+      error: "Lỗi"
