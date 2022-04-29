@@ -24,13 +24,26 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
   users:
     new:
       provide_title: "sign_up"
       title: "Sign up"
       btn_title: "Create my account"
       password_confirmation: "Confirmation"
+    controller:
+      flash: "welcome to the sample app!"
   shared:
     error_messages:
       the_form_contains: "The form contains"
       error: "Error"
+  sessions:
+    new:
+      btn_button: "Sign up now!"
+      title: "Log in"
+    controller:
+      flash: "Invalid email password combination"
