@@ -24,13 +24,26 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
   users:
     new:
       provide_title: "Đăng_ký"
       title: "Đăng ký"
       btn_title: "Tạo tài khoản"
       password_confirmation: "Xác nhận"
+    controller:
+      flash: "Chào mừng bạn đến với ứng dụng mẫu!"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
       error: "Lỗi"
+  sessions:
+    new:
+      btn_title: "Đăng ký ngay!"
+      title: "Đăng nhập"
+    controller:
+      flash: "Mật khẩu email không hợp lệ"
