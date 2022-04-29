@@ -45,5 +45,8 @@ en:
     new:
       btn_button: "Sign up now!"
       title: "Log in"
+      remember_checkbox: "Remember me on this computer"
+      new_user: "new user?"
     controller:
       flash: "Invalid email password combination"
+      flash_error: "error"

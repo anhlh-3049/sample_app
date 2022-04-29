@@ -45,5 +45,8 @@ vi:
     new:
       btn_title: "Đăng ký ngay!"
       title: "Đăng nhập"
+      remember_checkbox: "Hãy nhớ tôi trên máy tính này"
+      new_user: "Người dùng mới?"
     controller:
       flash: "Mật khẩu email không hợp lệ"
+      flash_error: "Lỗi"
