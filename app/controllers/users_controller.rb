@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = t ".flash"
-      redirect_to root_url
+      redirect_to root_path
     else
       render :new
     end
