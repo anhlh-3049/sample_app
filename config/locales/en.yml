@@ -35,8 +35,25 @@ en:
       title: "Sign up"
       btn_title: "Create my account"
       password_confirmation: "Confirmation"
+    edit:
+      provide_title: "Edit user"
+      title: "Update your profile"
+      password_confirmation: "Confirmation"
+      btn_title: "Save changes"
+      service_html: "change"
+    index:
+      provide_title: "All users"
+      title: "All users"
+    _user:
+      btn_title: "delete"
+      confirm: "You sure?"
     controller:
       flash: "welcome to the sample app!"
+      flash_update: "Profile updated"
+      flash_error_update: "Profile cannot updated"
+      flash_destroy: "User deleted"
+      flash_danger_des: "Delete fail!"
+      flash_danger_login: "Please log in."
   shared:
     error_messages:
       the_form_contains: "The form contains"
