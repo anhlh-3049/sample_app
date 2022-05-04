@@ -8,7 +8,7 @@ module SessionsHelper
       @current_user ||= User.find_by id: user_id
     elsif user_id = cookies.signed[:user_id]
       user = User.find_by id: user_id
-      if user&.authenticated? cookies[:remember_token]
+      if user&.authenticated? :remember, cookies[:remember_token]
         log_in user
         @current_user = user
       end
@@ -48,5 +48,18 @@ module SessionsHelper
 
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
+  end
+
+  def user_activated
+    @user = User.find_by email: params.dig(:session, :email)&.downcase
+    if @user.activated
+      log_in @user
+      params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
+      redirect_back_or @user
+    else
+      message = t ".messages"
+      flash[:warning] = message
+      redirect_to root_path
+    end
   end
 end

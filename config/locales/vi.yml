@@ -44,7 +44,7 @@ vi:
     index:
       provide_title: "Tất cả người sử dụng"
       title: "Tất cả người sử dụng"
-    _user:
+    user:
       btn_title: "Xóa"
       confirm: "Bạn chắc chắn?"
     controller:
@@ -53,6 +53,7 @@ vi:
       flash_destroy: "Người dùng đã bị xóa"
       flash_danger_des: "Xóa không thành công!"
       flash_danger_login: "Vui lòng hãy đăng nhập."
+      flash_info: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
@@ -66,3 +67,20 @@ vi:
     controller:
       flash: "Mật khẩu email không hợp lệ"
       flash_error: "Lỗi"
+      messages: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để biết liên kết kích hoạt."
+  account_active:
+    controller:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+  mailers:
+    user_mailer:
+      subject: "Kích hoạt tài khoản"
+  user_mailer:
+    account_activation:
+      title: "Ứng dụng mẫu"
+      greeting: "Xin chào"
+      service_html: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      hreft: "Kích hoạt"
+    account_activation_text:
+      greeting: "Xin chào"
+      service_html: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
