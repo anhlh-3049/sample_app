@@ -1,4 +1,12 @@
 user:
   email:
     max_length: 255
-  email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+    email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  password:
+    min: 6
+users_helper:
+  option:
+    max_length: 80
+users:
+  size:
+    max_length: 50

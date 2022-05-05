@@ -35,8 +35,24 @@ vi:
       title: "Đăng ký"
       btn_title: "Tạo tài khoản"
       password_confirmation: "Xác nhận"
+    edit:
+      provide_title: "Chỉnh sửa người dùng"
+      title: "Cập nhật hồ sơ của bạn"
+      password_confirmation: "Xác nhận"
+      btn_title: "Lưu thay đổi"
+      service_html: "Thay đổi"
+    index:
+      provide_title: "Tất cả người sử dụng"
+      title: "Tất cả người sử dụng"
+    _user:
+      btn_title: "Xóa"
+      confirm: "Bạn chắc chắn?"
     controller:
       flash: "Chào mừng bạn đến với ứng dụng mẫu!"
+      flash_update: "Hồ sơ cá nhân đã cập nhật"
+      flash_destroy: "Người dùng đã bị xóa"
+      flash_danger_des: "Xóa không thành công!"
+      flash_danger_login: "Vui lòng hãy đăng nhập."
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
