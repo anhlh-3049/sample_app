@@ -64,6 +64,7 @@ vi:
       title: "Đăng nhập"
       remember_checkbox: "Hãy nhớ tôi trên máy tính này"
       new_user: "Người dùng mới?"
+      link_to_title: "Quên mật khẩu"
     controller:
       flash: "Mật khẩu email không hợp lệ"
       flash_error: "Lỗi"
@@ -74,7 +75,8 @@ vi:
       flash_danger: "Invalid activation link"
   mailers:
     user_mailer:
-      subject: "Kích hoạt tài khoản"
+      subject_mail: "Kích hoạt tài khoản"
+      subject_password: "Đặt lại mật khẩu"
   user_mailer:
     account_activation:
       title: "Ứng dụng mẫu"
@@ -84,3 +86,25 @@ vi:
     account_activation_text:
       greeting: "Xin chào"
       service_html: "Chào mừng bạn đến với Ứng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      service_html_first: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      link_to_title: "Đặt lại mật khẩu"
+      service_html_last: "Liên kết này sẽ hết hạn sau hai giờ."
+      content: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+  password_reset:
+    controller:
+      flash_create_info: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      flash_create_danger: "Không tìm thấy địa chỉ email"
+      error: "không thể để trống"
+      flash_update_success: "Mật khẩu đã được đặt lại."
+      flash_danger: "Đặt lại mật khẩu đã hết hạn."
+    edit:
+      provide_title: "Đặt lại mật khẩu"
+      title: "Đặt lại mật khẩu"
+      password_confirmation: "Xác nhận"
+      btn_button: "Cập nhật mật khẩu"
+    new:
+      provide_title: "Quên mật khẩu"
+      title: "Quên mật khẩu"
+      btn_button: "Xác nhận"

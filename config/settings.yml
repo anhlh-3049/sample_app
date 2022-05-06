@@ -4,6 +4,8 @@ user:
     email_regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
   password:
     min: 6
+  password_reset:
+    time: 2
 users_helper:
   option:
     max_length: 80
