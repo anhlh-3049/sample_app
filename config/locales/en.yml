@@ -11,6 +11,7 @@ en:
       rails_href: "Ruby on Rails Tutorial"
       button_title: "Sign up now!"
       welcome: "Welcome to the Sample App"
+      post_title: "Micropost Feed"
     help:
       title: "Help"
       provide_title: "Help"
@@ -109,3 +110,33 @@ en:
       provide_title: "Forgot password"
       title: "Forgot password"
       btn_button: "Submit"
+  controllers:
+    application_controller:
+      flash_danger: "Please log in."
+    microposts_controller:
+      flash_save: "Micropost created!"
+      flash_destroy: "Micropost deleted"
+      flash_danger_des: "Delete fail!"
+      flash_error: "not found micropost"
+  models:
+    microposts:
+      content_message: "must be a valid image format"
+      size_message: "should be less than 5MB"
+  views:
+    microposts:
+      micropost:
+        post: "Posted"
+        ago: "ago."
+        link_to_title: "delete"
+        confirm: "You sure?"
+    shared:
+      micropost_form:
+        btn_title: "Post"
+        placeholder: "Compose new micropost..."
+    users:
+      show:
+        title: "Microposts"
+  javascripts:
+    packs:
+      form:
+        alert_content: "Maximum file size is 5MB. Please choose a smaller file."

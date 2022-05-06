@@ -5,10 +5,12 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.all)
+    @pagy, @users = pagy User.all
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts
+  end
 
   def new
     @user = User.new
@@ -60,14 +62,6 @@ class UsersController < ApplicationController
 
   def correct_user
     redirect_to root_path unless current_user? @user
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".flash_danger_login"
-    redirect_to login_path
   end
 
   def admin_user

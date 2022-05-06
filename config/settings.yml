@@ -12,3 +12,25 @@ users_helper:
 users:
   size:
     max_length: 50
+micropost:
+  content:
+    max_length: 140
+  images:
+    max_size: [500, 500]
+  gravata:
+    max_size: 50
+  content_type:
+    type: ["image/jpeg", "image/gif", "image/png"]
+  images_size:
+    less: 5
+static_pages:
+  items:
+    max_length: 30
+  home:
+    herf: "http://www.railstutorial.org/"
+  help:
+    herf_help: "http://www.railstutorial.org/help"
+    herf_book: "http://www.railstutorial.org/book"
+shared:
+  user_info:
+    max_size: 50

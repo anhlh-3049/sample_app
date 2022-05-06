@@ -50,6 +50,7 @@ vi:
     controller:
       flash: "Chào mừng bạn đến với ứng dụng mẫu!"
       flash_update: "Hồ sơ cá nhân đã cập nhật"
+      flash_error_update: "Hồ sơ không thể cập nhật"
       flash_destroy: "Người dùng đã bị xóa"
       flash_danger_des: "Xóa không thành công!"
       flash_danger_login: "Vui lòng hãy đăng nhập."
@@ -108,3 +109,32 @@ vi:
       provide_title: "Quên mật khẩu"
       title: "Quên mật khẩu"
       btn_button: "Xác nhận"
+  controllers:
+    application_controller:
+      flash_danger: "Vui lòng hãy đăng nhập."
+    microposts_controller:
+      flash_save: "Đã tạo micropost!"
+      flash_destroy: "Micropost đã bị xóa"
+      flash_danger_des: "Xóa không thành công!"
+  models:
+    microposts:
+      content_message: "phải là một định dạng hình ảnh hợp lệ"
+      size_message: "phải nhỏ hơn 5MB"
+  views:
+    microposts:
+      micropost:
+        post: "Đã đăng"
+        ago: "trước kia."
+        link_to_title: "Xóa"
+        confirm: "Bạn chắc chắn?"
+    shared:
+      micropost_form:
+        btn_title: "Đã đăng"
+        placeholder: "Soạn micropost mới ..."
+    users:
+      show:
+        title: "Microposts"
+  javascripts:
+    packs:
+      form:
+        alert_content: "Kích thước tệp tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn."
