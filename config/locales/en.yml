@@ -44,7 +44,7 @@ en:
     index:
       provide_title: "All users"
       title: "All users"
-    _user:
+    user:
       btn_title: "delete"
       confirm: "You sure?"
     controller:
@@ -54,6 +54,7 @@ en:
       flash_destroy: "User deleted"
       flash_danger_des: "Delete fail!"
       flash_danger_login: "Please log in."
+      flash_info: "Please check your email to activate your account."
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -67,3 +68,20 @@ en:
     controller:
       flash: "Invalid email password combination"
       flash_error: "error"
+      messages: "Account not activated. Check your email for the activation link."
+  account_active:
+    controller:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+  mailers:
+    user_mailer:
+      subject: "Account activation"
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+      hreft: "Activate"
+    account_activation_text:
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :find_user, except: :index
-  before_action :logged_in_user, except: %i(edit update index destroy)
+  before_action :logged_in_user, except: %i(new create show)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
@@ -17,8 +17,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".flash"
+      @user.send_activation_email
+      flash[:info] = t ".flash_info"
       redirect_to root_path
     else
       render :new
@@ -43,7 +43,7 @@ class UsersController < ApplicationController
     else
       flash[:danger] = t ".flash_danger_des"
     end
-    redirect_to user_path
+    redirect_to @users
   end
 
   private
