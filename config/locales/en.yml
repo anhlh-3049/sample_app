@@ -56,6 +56,15 @@ en:
       flash_danger_des: "Delete fail!"
       flash_danger_login: "Please log in."
       flash_info: "Please check your email to activate your account."
+      following_title: "Following"
+      followers_title: "Followers"
+    follow:
+      btn_title: "Follow"
+    unfollow:
+      btn_title: "Unfollow"
+    show_follow:
+      link_to_title: "view my profile"
+      title: "Microposts:"
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -133,6 +142,9 @@ en:
       micropost_form:
         btn_title: "Post"
         placeholder: "Compose new micropost..."
+      stats:
+        following_title: "Following"
+        followers_title: "Followers"
     users:
       show:
         title: "Microposts"
