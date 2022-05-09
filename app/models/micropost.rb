@@ -1,6 +1,7 @@
 class Micropost < ApplicationRecord
   default_scope ->{order created_at: :desc}
   scope :recent_posts, ->{order created_at: :desc}
+  scope :find_micropost, ->(user_ids){where user_id: user_ids}
 
   belongs_to :user
 

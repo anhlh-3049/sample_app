@@ -23,10 +23,10 @@ gem "bootstrap-sass", "3.4.1"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
 gem "faker", "2.1.2"
+gem "i18n-js"
 gem "image_processing", "1.9.3"
 gem "mini_magick", "4.9.5"
 gem "pagy"
-gem "i18n-js"
 gem "rails-i18n"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

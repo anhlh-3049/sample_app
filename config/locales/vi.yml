@@ -55,6 +55,15 @@ vi:
       flash_danger_des: "Xóa không thành công!"
       flash_danger_login: "Vui lòng hãy đăng nhập."
       flash_info: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn"
+      following_title: "Tiếp theo"
+      followers_title: "Người theo dõi"
+    follow:
+      btn_title: "Theo dõi"
+    unfollow:
+      btn_title: "Bỏ theo dõi"
+    show_follow:
+      link_to_title: "xem hồ sơ của tôi"
+      title: "Microposts:"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu chứa"
@@ -131,6 +140,9 @@ vi:
       micropost_form:
         btn_title: "Đã đăng"
         placeholder: "Soạn micropost mới ..."
+      stats:
+        following_title: "Tiếp theo"
+        followers_title: "Người theo dõi"
     users:
       show:
         title: "Microposts"

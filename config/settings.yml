@@ -6,6 +6,8 @@ user:
     min: 6
   password_reset:
     time: 2
+  show_follow:
+    max_size: 30
 users_helper:
   option:
     max_length: 80
@@ -31,6 +33,9 @@ static_pages:
   help:
     herf_help: "http://www.railstutorial.org/help"
     herf_book: "http://www.railstutorial.org/book"
+static_pages:
+  items:
+    max_length: 30
 shared:
   user_info:
     max_size: 50
